@@ -1,7 +1,6 @@
-from collections import defaultdict
 import io
-import os
 import re
+from collections import defaultdict
 
 
 class Theatre:
@@ -57,14 +56,6 @@ class Theatre:
             scene_lines[int(scene)].append(line)
         return dict(scene_lines)
 
-    # TODO: delete this method
-    def is_character(self, line) -> bool:
-        for character in self.characters:
-            pattern = re.compile(r'({c}), (à \w+)|({c})(?!, )'.format(c=character))
-            if pattern.match(line):
-                return True
-        return False
-
     def get_character(self, line) -> (str, str):
         charac = None
         stage_direction = None
@@ -79,16 +70,3 @@ class Theatre:
                     stage_direction = match.group(2)
 
         return charac, stage_direction
-
-
-filename_t = os.path.join('data', 'tartuffe_1.txt')
-livrel = Theatre(filename_t, 1)
-
-print(livrel.get_scene_characters(1))
-print(livrel.nb_scene)
-print(livrel.characters)
-
-print(livrel.scene_lines[1])
-print(livrel.get_character('Madame Pernelle, à Orgon'))
-print(livrel.get_character('Madame Pernelle'))
-print(livrel.get_character('Madame Pernelle, Elmire, Cléante'))
