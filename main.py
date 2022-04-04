@@ -1,10 +1,10 @@
 import os
-from livrel import Theatre
+from livrel import Theatre2
 
 filepath = os.path.join('data', 'tartuffe_1.txt')
 #filepath = os.path.join('data', 'test.txt')
 
-theatre = Theatre.Theatre(filepath, 1)
+theatre = Theatre2.Theatre(filepath, 1)
 
 #print(theatre.nb_scene)
 #print(theatre.characters)
