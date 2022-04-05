@@ -18,3 +18,7 @@ def get_typology(text: str) -> Optional[StageDirectionTypology]:
     elif REG_ENUNCIATIVES_WORDS.match(text.upper()):
         return StageDirectionTypology.ENUNCIATIVE
     return None
+
+
+def is_stage_direction(text: str) -> bool:
+    return True

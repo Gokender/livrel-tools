@@ -4,7 +4,7 @@ from livrel.constant import StageDirectionTypology
 import livrel.utils
 
 
-class Test(TestCase):
+class TestGetTypology(TestCase):
     def test_typology_nominative_normal(self):
         a = livrel.utils.get_typology('Montrant Elmire')
         result = StageDirectionTypology.NOMINATIVE
