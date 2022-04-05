@@ -85,37 +85,9 @@ print(a.to_dict())
 print(a == b)
 
 
-REG_SD = re.compile(r'\((.*)\)')
 
-class StageDirection:
 
-    def __init__(self, text: str, typology: StageDirectionTypology=None):
 
-        self.data = text
-        self._format()
-
-        if typology is not None:
-            self.typology = typology
-        else:
-            self.typology = get_typology(self.text)
-
-    def to_dict(self):
-        return vars(self)
-
-    def _format(self):
-        match = REG_SD.match(self.data)
-        if match:
-            self.text = match.group(1)
-        else:
-            self.text = self.data
-
-        self.text = self.text.replace('.','')
-        self.text = self.text.strip()
-
-    def __eq__(self, other):
-        if (isinstance(other, StageDirection)):
-            return self.data == other.data and self.typology == other.typology
-        return False
 
 sd = StageDirection('(Montrant Cléante.)', StageDirectionTypology.NOMINATIVE)
 print(sd.to_dict())
@@ -130,17 +102,7 @@ sd = StageDirection('à Elmire.', StageDirectionTypology.NOMINATIVE)
 print(sd.to_dict())
 
 
-NOMINATIVES_WORDS = [
-    'Montrant',
-    'Donnant'
-]
 
-ENUNCIATIVES_WORDS = [
-    'à'
-]
-
-REG_NOMINATIVES_WORDS = re.compile(r'|'.join(word.upper() for word in NOMINATIVES_WORDS))
-REG_ENUNCIATIVES_WORDS = re.compile(r'|'.join(word.upper() for word in ENUNCIATIVES_WORDS))
 
 print(REG_NOMINATIVES_WORDS.match('Montrant Cléante'.upper()))
 print(REG_ENUNCIATIVES_WORDS.match('à Elmire'.upper()))
