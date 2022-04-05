@@ -1,4 +1,5 @@
 import enum
+import re
 
 
 class Metres(enum.IntEnum):
@@ -26,3 +27,19 @@ class StageDirectionTypology(enum.Enum):
     ENUNCIATIVE = 2  # To whom a character is speaking
     LOCATIVE = 3  # Indicate the place of the action;
     KINESIC = 4
+
+    def __repr__(self) -> str:
+        return str(self.value)
+
+
+NOMINATIVES_WORDS = [
+    'Montrant',
+    'Donnant'
+]
+
+ENUNCIATIVES_WORDS = [
+    'à'
+]
+
+REG_NOMINATIVES_WORDS = re.compile(r'|'.join(word.upper() for word in NOMINATIVES_WORDS))
+REG_ENUNCIATIVES_WORDS = re.compile(r'|'.join(word.upper() for word in ENUNCIATIVES_WORDS))
