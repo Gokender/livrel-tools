@@ -1,0 +1,114 @@
+"""{
+    "character":"Dorine",
+    "verses":{
+        "0": {
+            "type":"v",
+            "raw":"Quel caquet est le vôtre !",
+            "text":"Quel caquet est le vôtre !",
+            "metre":6
+        },
+        "1": {
+            "type":"v",
+            "raw":"Tirez de cette part, et vous, tirez de l’autre.",
+            "text":"Tirez de cette part, et vous, tirez de l'autre.",
+            "metre":null
+        },
+        "2": {
+            "type":"s",
+            "raw":"(Dorine les pousse chacun par l’épaule, et les oblige de se séparer.)",
+            "text":"<% stage_direction | 0 %>, <% stage_direction | 1 %>",
+            "stage_direction":{
+                "0":{
+                    "id_":0,
+                    "text":"Dorine les pousse chacun par l’épaule",
+                    "typology":null
+                },
+                "1":{
+                    "id_":1,
+                    "text":"et les oblige de se séparer",
+                    "typology":null
+                }
+            }
+        },
+        "3": {
+            "type":"vs",
+            "raw":"Dorine… (À Cléante.) Mon beau-frère, attendez, je vous prie.",
+            "text":"Dorine… <% stage_direction | 0 %> Mon beau-frère, attendez, je vous prie.",
+            "stage_direction":{
+                "0":{
+                    "text":"À Cléante.",
+                    "typology":null
+                }
+            }
+        }
+    }
+}"""
+
+data_2 = [
+    'Dorine',
+    'Quel caquet est le vôtre !',
+    'Tirez de cette part, et vous, tirez de l’autre.',
+    '(Dorine les pousse chacun par l’épaule, et les oblige de se séparer.)',
+    'Dorine… (À Cléante.) Mon beau-frère, attendez, je vous prie.'
+]
+import re
+
+REG_S = re.compile(r'\((.*)\)')
+REG_VS = re.compile(r' \((.*)\) ')
+
+
+class StageDirection:
+
+    def __init__(self, text, typology=None):
+
+        self.text = text
+        self.typology = typology
+
+    def to_dict(self):
+        return vars(self)
+
+class Verse:
+
+    def __init__(self, raw):
+
+        self.raw = raw
+        self.text = self.raw
+        self.stage_direction = {}
+
+        self._format()
+        self._get_type()
+        
+        if 's' in self.type_:
+            self._format_sd()
+
+    def _get_type(self):
+        if REG_S.match(self.text):
+            self.type_ = 's'
+        elif REG_VS.search(self.text):
+            self.type_ = 'vs'
+        else:
+            self.type_ = 'v'
+
+    def _format(self):
+        self.text = self.text.replace('’','\'')
+
+    def _format_sd(self):
+        cpt = 0
+        match = REG_S.search(self.text)
+        for r in match.group(1).split(','):
+            print(r)
+            self.text = self.text.replace(r, '<[ stage_direction | {} ]>'.format(cpt))
+            self.stage_direction[cpt] = StageDirection(r)
+
+            cpt += 1
+
+        self.text = self.text.replace('(','').replace(')','')
+
+    def to_dict(self):
+        for key in self.stage_direction.keys():
+            self.stage_direction[key] = self.stage_direction[key].to_dict()
+        return vars(self)
+    
+for i in range(1, len(data_2)):
+    print(i, data_2[i])
+    print(Verse(data_2[i]).to_dict())
