@@ -1,3 +1,5 @@
+https://www.persee.fr/doc/prati_0338-2389_2003_num_119_1_2011#
+
 ## TEMPORAL
 
 ```
