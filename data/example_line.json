@@ -1,0 +1,45 @@
+{
+    "character":"Dorine",
+    "verses":{
+        "0": {
+            "type":"v",
+            "raw":"Quel caquet est le vôtre !",
+            "text":"Quel caquet est le vôtre !",
+            "metre":6
+        },
+        "1": {
+            "type":"v",
+            "raw":"Tirez de cette part, et vous, tirez de l’autre.",
+            "text":"Tirez de cette part, et vous, tirez de l'autre.",
+            "metre":null
+        },
+        "2": {
+            "type":"s",
+            "raw":"(Dorine les pousse chacun par l’épaule, et les oblige de se séparer.)",
+            "text":"<% stage_direction | 0 %>, <% stage_direction | 1 %>",
+            "stage_direction":{
+                "0":{
+                    "id_":0,
+                    "text":"Dorine les pousse chacun par l’épaule",
+                    "typology":null
+                },
+                "1":{
+                    "id_":1,
+                    "text":"et les oblige de se séparer",
+                    "typology":null
+                }
+            }
+        },
+        "3": {
+            "type":"vs",
+            "raw":"Dorine… (À Cléante.) Mon beau-frère, attendez, je vous prie.",
+            "text":"Dorine… <% stage_direction | 0 %> Mon beau-frère, attendez, je vous prie.",
+            "stage_direction":{
+                "0":{
+                    "text":"À Cléante.",
+                    "typology":null
+                }
+            }
+        }
+    }
+}
