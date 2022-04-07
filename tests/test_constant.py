@@ -107,33 +107,33 @@ class TestMetres(unittest.TestCase):
 class TestStageDirectionTypology(unittest.TestCase):
 
     def test_nominative_name(self):
-        a = StageDirectionTypology.NOMINATIVE
-        result = 'NOMINATIVE'
+        a = StageDirectionTypology.KINESIC
+        result = 'KINESIC'
         self.assertEqual(a.name, result)
 
     def test_nominative_value(self):
-        a = StageDirectionTypology.NOMINATIVE
-        result = 1
+        a = StageDirectionTypology.KINESIC
+        result = 7
         self.assertEqual(a.value, result)
 
     def test_nominative_repr(self):
-        a = StageDirectionTypology.NOMINATIVE
-        result = '1'
+        a = StageDirectionTypology.KINESIC
+        result = '7'
         self.assertEqual(repr(a), result)
 
-    def test_1_name(self):
-        a = StageDirectionTypology(1)
-        result = 'NOMINATIVE'
+    def test_7_name(self):
+        a = StageDirectionTypology(7)
+        result = 'KINESIC'
         self.assertEqual(a.name, result)
 
-    def test_1_value(self):
-        a = StageDirectionTypology(1)
-        result = 1
+    def test_7_value(self):
+        a = StageDirectionTypology(7)
+        result = 7
         self.assertEqual(a.value, result)
 
-    def test_1_repr(self):
-        a = StageDirectionTypology(1)
-        result = '1'
+    def test_7_repr(self):
+        a = StageDirectionTypology(7)
+        result = '7'
         self.assertEqual(repr(a), result)
 
 

@@ -22,11 +22,14 @@ class Metres(enum.IntEnum):
         return str(self.value)
 
 
-class StageDirectionTypology(enum.Enum):
-    NOMINATIVE = 1  # Designating a character
-    ENUNCIATIVE = 2  # To whom a character is speaking
-    LOCATIVE = 3  # Indicate the place of the action;
-    KINESIC = 4
+class StageDirectionTypology(enum.IntEnum):
+    TEMPORAL = 1
+    LOCATIVE = 2
+    PROSOPOGRAPHIC = 3
+    ETHOPOEIC = 4
+    PROSODIC = 5
+    MIMIC = 6
+    KINESIC = 7
 
     def __repr__(self) -> str:
         return str(self.value)
