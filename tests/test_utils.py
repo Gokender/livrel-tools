@@ -3,8 +3,9 @@ from unittest import TestCase
 from livrel.constant import StageDirectionTypology
 import livrel.utils
 
-
+"""
 class TestGetTypology(TestCase):
+    
     def test_typology_nominative_normal(self):
         a = livrel.utils.get_typology('Montrant Elmire')
         result = StageDirectionTypology.NOMINATIVE
@@ -48,3 +49,4 @@ class TestGetTypology(TestCase):
         a = livrel.utils.get_typology('Elmire')
         result = None
         self.assertIs(a, result)
+"""
