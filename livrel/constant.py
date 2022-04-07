@@ -44,6 +44,8 @@ ENUNCIATIVES_WORDS = [
     'à'
 ]
 
-REG_SD = re.compile(r'\((.*)\)')
+REG_PRIVATE_VAR = re.compile(r'^_\w+')
+REG_S = re.compile(r'\((.*)\)')
+REG_VS = re.compile(r' \((.*)\) ')
 REG_NOMINATIVES_WORDS = re.compile(r'|'.join(word.upper() for word in NOMINATIVES_WORDS))
 REG_ENUNCIATIVES_WORDS = re.compile(r'|'.join(word.upper() for word in ENUNCIATIVES_WORDS))
