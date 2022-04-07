@@ -17,7 +17,8 @@ class Line:
     def __init__(self, line: list):
 
         if line and len(line) > 1:
-            self.character = line[0]
+
+            self.character = Character(line[0])
             self._line = line[1:]
             self.verses = {}
 
@@ -31,6 +32,31 @@ class Line:
 
     def to_dict(self):
         self.verses = get_dict(self.verses)
+        return get_variables(self)
+
+
+class Character:
+
+    def __init__(self, line: str):
+        self._line = line
+
+        if not self._is_stage_direction():
+            self.name = line
+        else:
+            _elements = self._line.split(',')
+            self.name = _elements[0]
+            self.stage_direction = {}
+            for index, item in enumerate(_elements[1:]):
+                self.stage_direction[index] = StageDirection(item)
+
+    def _is_stage_direction(self) -> bool:
+        if len(self._line.split(',')) > 1:
+            return True
+        return False
+
+    def to_dict(self):
+        if hasattr(self, 'stage_direction'):
+            self.stage_direction = get_dict(self.stage_direction)
         return get_variables(self)
 
 
@@ -93,7 +119,7 @@ class StageDirection:
     def __init__(self, text: str, typology: Optional[StageDirectionTypology] = None):
 
         if isinstance(text, str):
-            self.text = text
+            self.text = text.strip()
         else:
             raise ValueError('text must be an str')
 

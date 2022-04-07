@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from livrel.constant import StageDirectionTypology
-from livrel.drama import Verse, StageDirection, Line
+from livrel.drama import Verse, StageDirection, Line, Character
 
 
 class TestVerse(TestCase):
@@ -115,7 +115,7 @@ class TestLine(TestCase):
     def test_line_character(self):
         li = Line(['Dorine', 'Quel caquet est le vôtre !'])
         result = 'Dorine'
-        self.assertEqual(li.character, result)
+        self.assertEqual(li.character.name, result)
 
     def test_line_verses(self):
         li = Line(['Dorine', 'Quel caquet est le vôtre !'])
@@ -130,3 +130,33 @@ class TestLine(TestCase):
         li_dict = li.to_dict()
         result = 'v'
         self.assertEqual(li_dict['verses'][0]['type_'], result)
+
+
+class TestCharacter(TestCase):
+    def test_character_name_wtho_sd(self):
+        c = Character('Dorine')
+        result = 'Dorine'
+        self.assertEqual(c.name, result)
+
+    def test_character_dict_wtho_sd(self):
+        c = Character('Dorine')
+        result = {'name': 'Dorine'}
+        self.assertEqual(c.to_dict(), result)
+
+    def test_character_name_wth_sd(self):
+        c = Character('Cléante, seul')
+        result = 'Cléante'
+        self.assertEqual(c.name, result)
+
+    def test_character_dict_wth_sd(self):
+        c = Character('Cléante, seul')
+        result = {'name': 'Cléante', 'stage_direction': {0: {'text': 'seul', 'typology': None}}}
+        self.assertEqual(c.to_dict(), result)
+
+    def test_character_dict_wth_multiple_sd(self):
+        c = Character('Cléante, seul, à part ')
+        result = {'name': 'Cléante', 'stage_direction': {
+            0: {'text': 'seul', 'typology': None},
+            1: {'text': 'à part', 'typology': None}
+        }}
+        self.assertEqual(c.to_dict(), result)
