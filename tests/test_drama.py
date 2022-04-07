@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from livrel.constant import Metres, StageDirectionTypology
-from livrel.drama import Verse
+from livrel.drama import Verse, StageDirection
 
 
 class TestVerse(TestCase):
@@ -42,3 +42,30 @@ class TestVerse(TestCase):
     def test_verse_wrong_type_metre(self):
         with self.assertRaises(ValueError):
             Verse(1, 'Hello World!', 12)
+
+
+class TestStageDirection(TestCase):
+
+    def test_stage_direction_text(self):
+        a = StageDirection('Hello')
+        result = 'Hello'
+        self.assertEqual(a.text, result)
+
+    def test_stage_direction_typology_none(self):
+        a = StageDirection('Hello')
+        result = None
+        self.assertIs(a.typology, result)
+
+    def test_stage_direction_typology_prosodic(self):
+        a = StageDirection('Hello', StageDirectionTypology.PROSODIC)
+        result = 5
+        self.assertEqual(a.typology, result)
+
+    def test_stage_direction_typology_str(self):
+        with self.assertRaises(ValueError):
+            StageDirection('Hello', 'PROSODIC')
+
+    def test_stage_direction_text_int(self):
+        with self.assertRaises(ValueError):
+            StageDirection(1)
+

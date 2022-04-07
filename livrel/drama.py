@@ -1,8 +1,6 @@
 from typing import Optional
 
 from .constant import Metres, StageDirectionTypology
-from .constant import REG_SD
-from .utils import get_typology
 
 
 class Verse:
@@ -37,28 +35,17 @@ class StageDirection:
 
     def __init__(self, text: str, typology: Optional[StageDirectionTypology] = None):
 
-        self.data = text
-        self._format()
+        if isinstance(text, str):
+            self.text = text
+        else:
+            raise ValueError('text must be an str')
 
-        if typology is not None:
+        if isinstance(typology, StageDirectionTypology):
+            self.typology = typology
+        elif typology is None:
             self.typology = typology
         else:
-            self.typology = get_typology(self.text)
+            raise ValueError('typology must be a StageDirectionTypology object')
 
-    def to_dict(self) -> dict:
+    def to_dict(self):
         return vars(self)
-
-    def _format(self):
-        match = REG_SD.match(self.data)
-        if match:
-            self.text = match.group(1)
-        else:
-            self.text = self.data
-
-        self.text = self.text.replace('.', '')
-        self.text = self.text.strip()
-
-    def __eq__(self, other):
-        if isinstance(other, StageDirection):
-            return self.data == other.data and self.typology == other.typology
-        return False
