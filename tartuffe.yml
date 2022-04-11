@@ -1,0 +1,431 @@
+scene: 1
+personnages: 
+  - Madame Pernelle
+  - Elmire
+  - Cléante
+  - Damis
+  - Dorine
+  - Flipote
+---
+personnage: Madame Pernelle
+didascalie: 
+  - 
+    text: ~
+replique: 
+    text: |
+      Allons, Flipote, allons ; que d’eux je me délivre.
+    didascalie: ~
+    note: ~
+---
+personnage: Elmire
+didascalie: ~
+replique: 
+    text: |
+      Vous marchez d’un tel pas, qu’on a peine à vous suivre.
+    didascalie: ~
+    note: ~
+---
+personnage: Madame Pernelle
+didascalie: ~
+replique: 
+    text: |
+      Laissez, ma bru, laissez ; ne venez pas plus loin ;
+      Ce sont toutes façons dont je n’ai pas besoin.
+    didascalie: ~
+    note: ~
+---
+personnage: Elmire
+didascalie: ~
+replique: 
+    text: |
+      De ce que l’on vous doit envers vous on s’acquitte.
+      Mais, ma mère, d’où vient que vous sortez si vite ?
+    didascalie: ~
+    note: ~
+---
+personnage: Madame Pernelle
+replique: 
+    text: |
+      C’est que je ne puis voir tout ce ménage-ci,
+      Et que de me complaire on ne prend nul souci.
+      Oui, je sors de chez vous fort mal édifiée :
+      Dans toutes mes leçons j’y suis contrariée ;
+      On n’y respecte rien, chacun y parle haut,
+      Et c’est tout justement la cour du roi Pétaud[1].
+    note:
+      id: 1
+      text: >
+        Suivant les commentateurs, le roi Pétaud (de peto, je demande) était le nom du chef que se choisissaient les mendiants au moyen-âge.
+        La cour d’un tel roi, avec de tel sujets, ne devait pas nécessairement présenter que désordre et confusion.
+        Le mot pétaudière se rattache probablement à la même origine.
+---
+personnage: Dorine
+replique: 
+    text: |
+      Si…
+---
+personnage: Madame Pernelle
+replique: 
+    text: |
+      Vous êtes, ma mie, une fille suivante,
+      Un peu trop forte en gueule, et fort impertinente ;
+      Vous vous mêlez sur tout de dire votre avis.
+---
+personnage: Damis
+replique: 
+    text: |
+      Mais…
+---
+personnage: Madame Pernelle
+replique: 
+    text: |
+      Vous êtes un sot en trois lettres, mon fils ;
+      C’est moi qui vous le dis, qui suis votre grand’mère ;
+      Et j’ai prédit cent fois à mon fils, votre père,
+      Que vous preniez tout l’air d’un méchant garnement,
+      Et ne lui donneriez jamais que du tourment.
+---
+personnage: Mariane
+replique: 
+    text: |
+      Je crois…
+---
+personnage: Mariane
+replique: 
+    text: |
+      Je crois…
+---
+personnage: Madame Pernelle
+replique: 
+    text: |
+      Mon Dieu ! sa sœur, vous faites la discrète,
+      Et vous n’y touchez pas, tant vous semblez doucette ;
+      Mais il n’est, comme on dit, pire eau que l’eau qui dort,
+      Et vous menez sous chape[2] un train que je hais fort.
+    note:
+      id: 2
+      text: >
+        Sous chape ou sous cape, en secret. La cape ou la chape, de bardocucullus des Gaulois, était un manteau à capuchon. 
+        On rabattait ce capuchon pour se cacher le visage, lorsqu’on voulait n’être point reconnu ; 
+        et métaphoriquement on vivait sous cape, quand on cachait ses actions.
+---
+personnage: Elmire
+replique: 
+    text: |
+      Mais, ma mère…
+---
+personnage: Madame Pernelle
+replique: 
+    text: |
+      Ma bru, qu’il ne vous en déplaise,
+      Votre conduite, en tout, est tout à fait mauvaise ;
+      Vous devriez leur mettre un bon exemple aux yeux ;
+      Et leur défunte mère en usait beaucoup mieux.
+      Vous êtes dépensière ; et cet état me blesse,
+      Que vous alliez vêtue ainsi qu’une princesse.
+      Quiconque à son mari veut plaire seulement,
+      Ma bru, n’a pas besoin de tant d’ajustement.
+---
+personnage: Cléante
+replique: 
+    text: |
+      Mais, madame, après tout…
+---
+personnage: Madame Pernelle
+replique: 
+    text: |
+      Pour vous, monsieur son frère,
+      Je vous estime fort, vous aime, et vous révère ;
+      Mais enfin si j’étais de mon fils son époux,
+      Je vous prierais bien fort de n’entrer point chez nous.
+      Sans cesse vous prêchez des maximes de vivre
+      Qui par d’honnêtes gens ne se doivent point suivre.
+      Je vous parle un peu franc ; mais c’est là mon humeur,
+      Et je ne mâche point ce que j’ai sur le cœur[3].
+    note:
+      id: 3
+      text: >
+        Molière, dans cette entrée en scène, dessine et fait connaître ses caractères avec une verve incomparable,
+        ce qui a fait dire à l’auteur de la Lettre sur l’Imposteur,publiée quinze jour après la première représentation :
+        « le spectateur reçoit une volupté très sensible d’être informé dès l’abord de la nature des personnages par une voie si fidèle et si agréable. »
+---
+personnage: Damis
+replique: 
+    text: |
+      Votre Monsieur Tartuffe est bien heureux, sans doute…
+---
+personnage: Madame Pernelle
+replique: 
+    text: |
+      C’est un homme de bien qu’il faut que l’on écoute 
+      Et je ne puis souffrir sans me mettre en courroux,
+      De le voir querellé par un fou comme vous[4].
+    note:
+      id: 4
+      text: >
+        Var. : De le voir quereller par un fou comme vous.
+---
+personnage: Damis
+replique: 
+    text: |
+      Quoi ! je souffrirai, moi, qu’un cagot de critique
+      Vienne usurper céans un pouvoir tyrannique ;
+      Et que nous ne puissions à rien nous divertir,
+      Si ce beau monsieur-là n’y daigne consentir ?
+---
+personnage: Dorine
+replique: 
+    text: |
+      S’il le faut écouter, et croire à ses maximes,
+      On ne peut faire rien, qu’on ne fasse des crimes ;
+      Car il contrôle tout, ce critique zélé.
+---
+personnage: Madame Pernelle
+replique: 
+    text: |
+      Et tout ce qu’il contrôle est fort bien contrôlé.
+      C’est au chemin du ciel qu’il prétend vous conduire :
+      Et mon fils à l’aimer vous devrait tous induire.
+---
+personnage: Damis
+replique: 
+    text: |
+      Non, voyez-vous, ma mère, il n’est père ni rien,
+      Qui me puisse obliger à lui vouloir du bien :
+      Je trahirais mon cœur de parler d’autre sorte.
+      Sur ses façons de faire à tous coups je m’emporte :
+      J’en prévois une suite, et qu’avec ce pied-plat
+      Il faudra que j’en vienne à quelque grand éclat.
+---
+personnage: Dorine
+replique: 
+    text: |
+      Certes, c’est une chose aussi qui scandalise
+      De voir qu’un inconnu céans s’impatronise ;
+      Qu’un gueux, qui, quand il vint, n’avait pas de souliers,
+      Et dont l’habit entier valait bien six deniers,
+      En vienne jusque-là que de se méconnaître,
+      De contrarier tout, et de faire le maître.
+---
+personnage: Madame Pernelle
+replique: 
+    text: |
+      Eh ! merci de ma vie, il en irait bien mieux
+      Si tout se gouvernait par ses ordres pieux.
+---
+personnage: Madame Pernelle
+replique: 
+    text: |
+      Eh ! merci de ma vie, il en irait bien mieux
+      Si tout se gouvernait par ses ordres pieux.
+---
+personnage: Dorine
+replique: 
+    text: |
+      Il passe pour un saint dans votre fantaisie :
+      Tout son fait, croyez-moi, n’est rien qu’hypocrisie.
+---
+personnage: Madame Pernelle
+replique: 
+    text: |
+      Voyez la langue !
+---
+personnage: Dorine
+replique: 
+    text: |
+      À lui, non plus qu’à son Laurent,
+      Je ne me fierais, moi, que sur un bon garant.
+---
+personnage: Madame Pernelle
+replique: 
+    text: |
+      J’ignore ce qu’au fond le serviteur peut être ;
+      Mais pour homme de bien je garantis le maître.
+      Vous ne lui voulez mal et ne le rebutez
+      Qu’à cause qu’il vous dit à tous vos vérités.
+      C’est contre le péché que son cœur se courrouce
+      Et l’intérêt du ciel est tout ce qui le pousse.
+---
+personnage: Dorine
+replique: 
+    text: |
+      Oui ; mais pourquoi, surtout depuis un certain temps,
+      Ne saurait-il souffrir qu’aucun hante céans ?
+      En quoi blesse le ciel une visite honnête,
+      Pour en faire un vacarme à nous rompre la tête ?
+      Veut-on que là-dessus je m’explique entre nous ?…
+      (Montrant Elmire.)
+      Je crois que de madame il est, ma foi, jaloux[5].
+    note:
+      id: 5
+      text: >
+        L’auteur de la Lettre sur l’Imposteur a remarqué le premier que ce trait était là pour faire pressentir la conduite,
+        ou plutôt pour rendre croyable l’amour porté de Tartuffe. (Aimé Martin)
+    didascalie: 
+      - 
+        text: (Montrant Elmire.)
+---
+personnage: Madame Pernelle
+replique: 
+    text: |
+      Taisez-vous, et songez aux choses que vous dites.
+      Ce n’est pas lui tout seul qui blâme ces visites :
+      Tout ce tracas qui suit les gens que vous hantez,
+      Ces carrosses sans cesse à la porte plantés,
+      Et de tant de laquais le bruyant assemblage,
+      Font un éclat fâcheux dans tout le voisinage.
+      Je veux croire qu’au fond il ne se passe rien ;
+      Mais enfin on en parle, et cela n’est pas bien.
+---
+personnage: Cléante
+replique: 
+    text: |
+      Hé ! voulez-vous, madame, empêcher qu’on ne cause ?
+      Ce serait dans la vie une fâcheuse chose,
+      Si, pour les sots discours où l’on peut être mis,
+      Il fallait renoncer à ses meilleurs amis.
+      Et quand même on pourrait se résoudre à le faire,
+      Croiriez-vous obliger tout le monde à se taire ?
+      Contre la médisance il n’est point de rempart.
+      À tous les sots caquets n’ayons donc nul égard ;
+      Efforçons-nous de vivre avec toute innocence,
+      Et laissons aux causeurs une pleine licence.
+---
+personnage: Dorine
+replique: 
+    text: |
+      Daphné, notre voisine, et son petit époux,
+      Ne seraient-ils point ceux qui parlent mal de nous ?
+      Ceux de qui la conduite offre le plus à rire
+      Sont toujours sur autrui les premiers à médire :
+      Ils ne manquent jamais de saisir promptement
+      L’apparente lueur du moindre attachement,
+      D’en semer la nouvelle avec beaucoup de joie,
+      Et d’y donner le tour qu’ils veulent qu’on y croie ;
+      Des actions d’autrui, teintes de leurs couleurs,
+      Ils pensent dans le monde autoriser les leurs,
+      Et, sous le faux espoir de quelque ressemblance,
+      Aux intrigues qu’ils ont donner de l’innocence,
+      Ou faire ailleurs tomber quelques traits partagés
+      De ce blâme public dont ils sont trop chargés[6].
+    note:
+      id: 6
+      text: >
+        Cette tirade fait allusion à la comtesse de Soissons, Olympe Mancini, qui, pour se venger de l’abandon du roi,
+        sema la nouvelle de ses amours avec La Vallière, encore vertueuse, et en instruisit la reine, en y donnant le tour qu’elle voulait qu’on y croie. 
+        Son petit époux joua un rôle dans cette intrigue, et ils furent exilés tous deux. (Aimé Martin.)
+---
+personnage: Madame Pernelle
+replique: 
+    text: |
+      Tous ces raisonnements ne font rien à l’affaire.
+      On sait qu’Orante mène une vie exemplaire ;
+      Tous ses soins vont au ciel ; et j’ai su, par des gens,
+      Qu’elle condamne fort le train qui vient céans.
+---
+personnage: Dorine
+replique: 
+    text: |
+      L’exemple est admirable, et cette dame est bonne !
+      Il est vrai qu’elle vit en austère personne ;
+      Mais l’âge, dans son âme, a mis ce zèle ardent,
+      Et l’on sait qu’elle est prude, à son corps défendant.
+      Tant qu’elle a pu des cœurs attirer les hommages,
+      Elle a fort bien joui de tous ses avantages ;
+      Mais, voyant de ses yeux tous les brillants baisser,
+      Au monde qui la quitte elle veut renoncer,
+      Et du voile pompeux d’une haute sagesse
+      De ses attraits usés déguiser la faiblesse.
+      Ce sont là les retours des coquettes du temps :
+      Il leur est dur de voir déserter les galants.
+      Dans un tel abandon, leur sombre inquiétude
+      Ne voit d’autre recours que le métier de prude ;
+      Et la sévérité de ces femmes de bien
+      Censure toute chose, et ne pardonne à rien[7].
+      Hautement d’un chacun elles blâment la vie,
+      Non point par charité, mais par un trait d’envie,
+      Qui ne saurait souffrir qu’une autre ait les plaisirs
+      Dont le penchant de l’âge a sevré leurs désirs[8].
+    note:
+      -
+        id: 7
+        text: >
+          Allusion à la duchesse de Navailles, qui avait fait placer des grilles à l’entrée des appartements des filles d’honneur, 
+          pour empêcher les entretiens du roi avec mademoiselle Lamothe Houdancourt. 
+          La duchesse de Navailles devait sa fortune à Mazarin, dont elle avait servi les intrigues pendant la Fronde, 
+          sous le nom de mademoiselle de Neuillant.
+      -
+        id: 8
+        text: >
+          La Lettre sur l’Imposteur indique ici un couplet de madame Pernelle et une repartie vigoureuse de Cléante,
+          que Molière, sans doute, crut devoir supprimer à la reprise de sa pièce.
+---
+personnage: Madame Pernelle
+didascalie: 
+  - 
+    text: à Elmire
+replique: 
+    text: |
+      Voilà les contes bleus qu’il vous faut pour vous plaire,
+      Ma bru. L’on est chez vous contrainte de se taire :
+      Car madame, à jaser, tient le dé tout le jour.
+      Mais enfin je prétends discourir à mon tour :
+      Je vous dis que mon fils n’a rien fait de plus sage
+      Qu’en recueillant chez soi ce dévot personnage ;
+      Que le ciel au besoin l’a céans envoyé
+      Pour redresser à tous votre esprit fourvoyé ;
+      Que, pour votre salut, vous le devez entendre,
+      Et qu’il ne reprend rien qui ne soit à reprendre.
+      Ces visites, ces bals, ces conversations,
+      Sont du malin esprit toutes inventions.
+      Là, jamais on n’entend de pieuses paroles ;
+      Ce sont propos oisifs, chansons, et fariboles :
+      Bien souvent le prochain en a sa bonne part,
+      Et l’on y sait médire et du tiers et du quart.
+      Enfin les gens sensés ont leurs têtes troublées
+      De la confusion de telles assemblées :
+      Mille caquets divers s’y font en moins de rien ;
+      Et, comme l’autre jour un docteur dit fort bien,
+      C’est véritablement la tour de Babylone[9],
+      Car chacun y babille, et tout du long de l’aune[10] ;
+      Et, pour conter l’histoire où ce point l’engagea…
+      (Montrant Cléante.)
+      Voilà-t-il pas monsieur qui ricane déjà !
+      Allez chercher vos fous qui vous donnent à rire,
+      (À Elmire.)
+      Et sans… Adieu, ma bru ; je ne veux plus rien dire.
+      Sachez que pour céans j’en rabats de moitié,
+      Et qu’il fera beau temps quand j’y mettrai le pied.
+      (Donnant un soufflet à Flipote.)
+      Allons, vous, vous rêvez et bayez aux corneilles.
+      Jour de Dieu ! je saurai vous frotter les oreilles.
+      Marchons, gaupe, marchons[11].
+    note:
+      -
+        id: 9
+        text: >
+          Le Père Caussin, jésuite, dit, dans sa Cour sainte, que les hommes ont fondé la tour de Babel, et les femmes la tour de babil.
+          Ce quolibet du jésuite n’aurait-il pas donné l’idée de celui que Molière met dans la bouche de madame Pernelle ?
+          et le père Caussin ne serait-il pas le docteur dont parle la vieille dévote ? (Auger.)
+      -
+        id: 10
+        text: >
+          Jusqu’à satiété, sans rien oublier.
+      -
+        id: 11
+        text: >
+          L’exposition vaut seule une pièce entière : c’est une espèce d’action.
+          L’ouverture de la scène vous transporte sur-le-champ dans l’intérieur d’un ménage où la mauvaise humeur et le babil grondeur d’une vieille femme,
+          la contrariété des avis et la marche du dialogue, font ressortir naturellement tous les personnages,
+          que le spectateur doit connaître sans que le poète ait l’air de les lui montrer. Le sot entêtement d’Orgon pour Tartuffe,
+          les simagrées de dévotion et de zèle du faux dévot, le caractère tranquille et réservé d’Elmire, la fougue impétueuse de son fils Damis,
+          la saine philosophie de son frère Cléante, la gaieté caustique de Dorine, et la liberté familière que lui donne une longue habitude de dire son avis sur tout,
+          la douceur timide de Mariane, tout ce que la suite de la pièce doit développer, tout, jusqu’à l’amour de Tartuffe pour Elmire,
+          est annoncé dans cette scène, qui est à la fois une exposition, un tableau, une situation. (La Harpe.)
+    didascalie: 
+      - 
+        text: (Montrant Cléante.)
+      - 
+        text: (À Elmire.)
+      - 
+        text: (Donnant un soufflet à Flipote.)
